@@ -30,3 +30,12 @@ function square(array, func) {
 }
 
 square(array,squareNumber)  // returns [1, 4, 9, 16, 25, 36]
+
+//or like this, array function with map simplified !!
+
+function square1(array,func) {
+   return  array.map(func);
+
+}
+const newArray = square1(array, squareNumber);
+console.log(newArray);
